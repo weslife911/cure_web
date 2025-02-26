@@ -45,6 +45,8 @@ class PaginatedImagesController extends Controller
             "/images/bg/group_32.jpg",
             "/images/bg/group_33.jpg",
             "/images/bg/group_34.jpg",
+            "/images/bg/group_35.jpg",
+            "/images/bg/group_36.jpg",
         ]);
 
         $page = request()->get("page", 1);
