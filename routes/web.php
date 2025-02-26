@@ -32,6 +32,8 @@ Route::get("/run-migration", function() {
 // Guest routes
 
 Route::get('/', function () {
+
+    dd(Subject::all());
     return view("index");
 })->name("guest.home");
 
