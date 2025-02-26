@@ -14,18 +14,22 @@ use Illuminate\Support\Facades\Route;
 // AWS MIGRATION ROUTES
 
 
-Route::get("/run-migration", function() {
-    Artisan::call("migrate:refresh --seed");
-    Artisan::call("db:seed", array("--class" => "SubjectSeeder"));
-
-    return "Migrations executed successfully";
-});
 
 
 
 // Guest routes
 
 Route::get('/', function () {
+
+    Subject::create([
+        ["subject" => "Mathematics"],
+        ["subject" => "French"],
+        ["subject" => "Physics"],
+        ["subject" => "Chemistry"],
+        ["subject" => "Biology"],
+        ["subject" => "General Knowledge"]
+    ]);
+
     dd(Subject::all());
     return view("index");
 })->name("guest.home");
