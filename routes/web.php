@@ -17,18 +17,6 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::get("/run-migration", function() {
-    DB::table("subjects")->insert([
-        ["subject" => "Mathematics"],
-        ["subject" => "French"],
-        ["subject" => "Physics"],
-        ["subject" => "Chemistry"],
-        ["subject" => "Biology"],
-        ["subject" => "General Knowledge"]
-    ]);
-
-    DB::table("users")->insert([
-        ["name" => "weslife", "email" => "thecurefoundationgroup@gmail.com", "field_of_study" => "Admin", "password" => Hash::make("wesleyadmin"), "is_admin" => 1]
-    ]);
 
     return "Migrations executed successfully";
 });
@@ -47,8 +35,6 @@ Route::middleware(["auth", "admin"])->group(
 // Guest routes
 
 Route::get('/', function () {
-    dd(User::all());
-    dd(Subject::all());
     return view("index");
 })->name("guest.home");
 
