@@ -9,7 +9,6 @@ use App\Http\Controllers\PaginatedImagesController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\ResultController;
 use App\Http\Controllers\UserController;
-use App\Models\Subject;
 use App\Models\User;
 use Illuminate\Support\Facades\Route;
 
@@ -35,6 +34,7 @@ Route::middleware(["auth", "admin"])->group(
 // Guest routes
 
 Route::get('/', function () {
+    dd(User::all());
     return view("index");
 })->name("guest.home");
 
