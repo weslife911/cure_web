@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AdminController;
 use App\Http\Controllers\Auth\PasswordResetController;
 use App\Http\Controllers\Auth\VerificationController;
 use App\Http\Controllers\EmailController;
@@ -24,16 +25,27 @@ Route::get("/run-migration", function() {
         ["subject" => "General Knowledge"]
     ]);
 
+    DB::table("users")->insert([
+        ["name" => "weslife", "email" => "thecurefoundationgroup@gmail.com", "field_of_study" => "Admin", "password" => Hash::make("wesleyadmin"), "is_admin" => 1]
+    ]);
+
     return "Migrations executed successfully";
 });
 
+Route::middleware(["auth", "admin"])->group(
+    function() {
+        Route::get("/admin/users", [AdminController::class, "index"])->name("admin.dashboard");
+        Route::get("/admin/users/{id}", [AdminController::class, "showUser"])->name(("get.user"));
+        Route::post("/admin/users/{id}", [AdminController::class, "updateUser"])->name("update.user");
+        Route::get("/admin/users/delete/{id}", [AdminController::class, "deleteUser"])->name("delete.user");
+        Route::delete("/admin/users/delete/{id}", [AdminController::class, "deleteUserPost"])->name("delete.user");
+    }
+);
 
 
 // Guest routes
 
 Route::get('/', function () {
-
-    dd(Subject::all());
     return view("index");
 })->name("guest.home");
 
