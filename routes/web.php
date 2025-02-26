@@ -8,6 +8,7 @@ use App\Http\Controllers\PaginatedImagesController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\ResultController;
 use App\Http\Controllers\UserController;
+use App\Models\Subject;
 use Illuminate\Support\Facades\Route;
 
 // AWS MIGRATION ROUTES
@@ -25,6 +26,7 @@ Route::get("/run-migration", function() {
 // Guest routes
 
 Route::get('/', function () {
+    dd(Subject::all());
     return view("index");
 })->name("guest.home");
 
