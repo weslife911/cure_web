@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::get("/run-migration", function() {
-    Subject::create([
+    DB::table("subjects")->insert([
         ["subject" => "Mathematics"],
         ["subject" => "French"],
         ["subject" => "Physics"],
