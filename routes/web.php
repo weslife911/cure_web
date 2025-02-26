@@ -34,7 +34,6 @@ Route::middleware(["auth", "admin"])->group(
 // Guest routes
 
 Route::get('/', function () {
-    dd(User::all());
     return view("index");
 })->name("guest.home");
 
