@@ -14,13 +14,7 @@ use Illuminate\Support\Facades\Route;
 // AWS MIGRATION ROUTES
 
 
-
-
-
-// Guest routes
-
-Route::get('/', function () {
-
+Route::get("/run-migration", function() {
     Subject::create([
         ["subject" => "Mathematics"],
         ["subject" => "French"],
@@ -30,7 +24,14 @@ Route::get('/', function () {
         ["subject" => "General Knowledge"]
     ]);
 
-    dd(Subject::all());
+    return "Migrations executed successfully";
+});
+
+
+
+// Guest routes
+
+Route::get('/', function () {
     return view("index");
 })->name("guest.home");
 
