@@ -10,7 +10,7 @@
              background-color:#1b1e25;opacity:0.4;content:""; position:absolute; top:0%; display:block; left:0%; right:0%; bottom:0%; width:100%; height:100%;
             }
         </style><section id="section-10945347" class="
-                    widget-section dynamic-form-widget sec-padding-xl  theme-dark-color-11                 " style="background:#1b1e25 url(/images/bg/group_13.jpg)  no-repeat center center;position: relative; overflow: hidden; background-size: cover;margin-top:0px"><div class="container boxWidget">
+                    widget-section dynamic-form-widget sec-padding-xl  theme-dark-color-11                 " style="background:#1b1e25 url(https://iili.io/32fQoFf.jpg)  no-repeat center center;position: relative; overflow: hidden; background-size: cover;margin-top:0px"><div class="container boxWidget">
                                         <div class="row centered-row ">
                                         <div class="richTextWidget block-title ">
          <h4 style="color: #fff;">Update your Profile</h4><p style="color: #fff;">Update your profile to reflect changes.</p></div>            

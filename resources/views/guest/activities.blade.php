@@ -14,7 +14,7 @@
         }
     </style>
     <section id="section-10942673" class="
-    wb-heroHeader dark                 " style="background-image: url(/images/bg/group_17.jpg);background-repeat: no-repeat;background-size: cover;background-position: center center;"><div class="wb-heroHeader-wrapper ">
+    wb-heroHeader dark                 " style="background-image: url(https://iili.io/32fQT92.jpg);background-repeat: no-repeat;background-size: cover;background-position: center center;"><div class="wb-heroHeader-wrapper ">
                         <div class="richTextWidget wb-heroHeader-content ">
 <h2 style=" margin-bottom:10px;" class="main-heading">ACTIVITIES</h2> <h6 style="text-transform: capitalize;">Here, view the activities of <strong style="color: #fff;">THE CURE FOUNDATION</strong> through a collection of images showcasing their initiatives, events, and programs designed to support Advanced Level students in achieving academic excellence and preparing for concourse exams.</h6>
 </div>            

@@ -16,7 +16,7 @@
 
 
     <section id="section-10942673" class="
-    wb-heroHeader dark                 " style="background-image: url(/images/bg/group_3.jpg);background-repeat: no-repeat;background-size: cover;background-position: center center;"><div class="wb-heroHeader-wrapper ">
+    wb-heroHeader dark                 " style="background-image: url(https://iili.io/32fLkT7.jpg);background-repeat: no-repeat;background-size: cover;background-position: center center;"><div class="wb-heroHeader-wrapper ">
                         <div class="richTextWidget wb-heroHeader-content ">
 <h2 style=" margin-bottom:10px;" class="main-heading">About Us</h2>
 </div>            
@@ -30,11 +30,11 @@
                                     <div class="row custom-row ">
                                     <div class="col-lg-6 col-sm-8 col-sm-12  ">
                                             <div class="imageWidget  ">
-                                                        <img class="lazyload curve-img-big" src="/images/bg/group_5.jpg"></div>
+                                                        <img class="lazyload curve-img-big" src="https://iili.io/32fLivV.jpg"></div>
  
             
                                         <div class="imageWidget  ">
-                                                        <img class="lazyload curve-img-sml" src="/images/bg/group_6.jpg"></div>
+                                                        <img class="lazyload curve-img-sml" src="https://iili.io/32fLZj1.jpg"></div>
  
             
     

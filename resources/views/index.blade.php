@@ -9,7 +9,7 @@
     
     
         <section id="section-10942673" class="
-                        wb-heroHeader dark                 " style="background-image: url(/images/bg/group_14.jpg);background-repeat: no-repeat;background-size: cover;background-position: center center;"><div class="wb-heroHeader-wrapper ">
+                        wb-heroHeader dark                 " style="background-image: url(https://iili.io/32fQxa4.jpg);background-repeat: no-repeat;background-size: cover;background-position: center center;"><div class="wb-heroHeader-wrapper ">
                                             <div class="richTextWidget wb-heroHeader-content ">
             <h2 style=" margin-bottom:10px;" class="main-heading">Welcome to THE CURE</h2> <h6 style="text-transform: capitalize;">Preparing Students for Success</h6>
         </div>            
@@ -25,11 +25,11 @@
                                         <div class="col-lg-6 ">
                                         <div class="img-flex ">
                                                 <div class="imageWidget  ">
-                                                            <img class="lazyload img-top-left" src="/images/career/eng_1.jpg"></div>
+                                                            <img class="lazyload img-top-left" src="https://iili.io/32fZ9Ve.jpg"></div>
      
                 
                                             <div class="imageWidget  ">
-                                                            <img class="lazyload img-med" src="/images/career/eng_2.jpg"></div>
+                                                            <img class="lazyload img-med" src="https://iili.io/32fZmdv.jpg"></div>
      
                 
      
@@ -74,12 +74,12 @@
                                         <div class=" ">
                                         <div class=" ">
                                                 <div class="imageWidget  ">
-                                                            <img class="lazyload sec-img" src="/images/career/doc_1.jpg"></div>
+                                                            <img class="lazyload sec-img" src="https://iili.io/32fZYbI.jpg"></div>
      
                 
                                             <div class="imageWidget  ">
                                                             <a href="" target="">
-                        <img class="lazyload sec-img2" src="/images/logo/logo.png"></a>
+                        <img class="lazyload sec-img2" src="https://iili.io/32fZHiu.png"></a>
             
         </div>
      
@@ -128,7 +128,7 @@
                 
                                     <div class="testimonial-bio ">
                                                 <div class="imageWidget  ">
-                                                            <img class="lazyload testimonial-bio-img" src="/images/main/founder.jpg"></div>
+                                                            <img class="lazyload testimonial-bio-img" src="https://iili.io/32fZBDP.jpg"></div>
      
                 
                                     <div class="richTextWidget  ">
@@ -150,7 +150,7 @@
                 
                                     <div class="testimonial-bio ">
                                                 <div class="imageWidget  ">
-                                                            <img class="lazyload testimonial-bio-img" src="/images/main/co.jpg"></div>
+                                                            <img class="lazyload testimonial-bio-img" src="https://iili.io/32fZKHQ.jpg"></div>
      
                 
                                     <div class="richTextWidget  ">
@@ -172,7 +172,7 @@
                 
                                     <div class="testimonial-bio ">
                                                 <div class="imageWidget  ">
-                                                            <img class="lazyload testimonial-bio-img" src="/images/main/witness.jpg"></div>
+                                                            <img class="lazyload testimonial-bio-img" src="https://iili.io/32fZxig.jpg"></div>
      
                 
                                     <div class="richTextWidget  ">

@@ -9,7 +9,7 @@
     
     
         <section id="section-10942673" class="
-                        wb-heroHeader dark                 " style="background-image: url(/images/bg/group_14.jpg);background-repeat: no-repeat;background-size: cover;background-position: center center;"><div class="wb-heroHeader-wrapper ">
+                        wb-heroHeader dark                 " style="background-image: url(https://iili.io/32fQxa4.jpg);background-repeat: no-repeat;background-size: cover;background-position: center center;"><div class="wb-heroHeader-wrapper ">
                                             <div class="richTextWidget wb-heroHeader-content ">
             <h2 style=" margin-bottom:10px;" class="main-heading">Welcome, {{Auth::user()->name}}</h2> <h6 style="text-transform: capitalize;">Preparing Students for Success</h6>
         </div>            
@@ -25,11 +25,11 @@
                                         <div class="col-lg-6 ">
                                         <div class="img-flex ">
                                                 <div class="imageWidget  ">
-                                                            <img class="lazyload img-top-left" src="/images/career/eng_1.jpg"></div>
+                                                            <img class="lazyload img-top-left" src="https://iili.io/32fZ9Ve.jpg"></div>
      
                 
                                             <div class="imageWidget  ">
-                                                            <img class="lazyload img-med" src="/images/career/eng_2.jpg"></div>
+                                                            <img class="lazyload img-med" src="https://iili.io/32fZmdv.jpg"></div>
      
                 
      
@@ -72,9 +72,9 @@
                 Download your timetable to get started
             </h3>
             @if (Auth::user()->field_of_study === "Engineering")
-            <a  class="btn btn-primary" href="https://thecurebucket.s3.eu-north-1.amazonaws.com/THE_CURE/timetable/ENG/THE_CURE_ENGINEERING_TIMETABLE_2024.pdf">Download Timetable</a>  
+            <a  class="btn btn-primary" href="https://mega.nz/file/N5RCzApB#Fyq4z_OzVbuxfin6znLlFPRuy3QxBE0P2puwgt_xxBQ">Download Timetable</a>  
             @else
-            <a  class="btn btn-primary" href="https://thecurebucket.s3.eu-north-1.amazonaws.com/THE_CURE/timetable/MED/2024_Medicine_Timetable.pdf">Download Timetable</a>  
+            <a  class="btn btn-primary" href="https://mega.nz/file/ch4TwDSR#ioJnM7jlnWwQtZ_qMFsD8_Ff55zKA8BMmjUv_LMVjg8">Download Timetable</a>  
             @endif
           
         </div>    
@@ -87,12 +87,12 @@
                                         <div class=" ">
                                         <div class=" ">
                                                 <div class="imageWidget  ">
-                                                            <img class="lazyload sec-img" src="/images/career/doc_1.jpg"></div>
+                                                            <img class="lazyload sec-img" src="https://iili.io/32fZYbI.jpg"></div>
      
                 
                                             <div class="imageWidget  ">
                                                             <a href="" target="">
-                        <img class="lazyload sec-img2" src="/images/logo/logo.png"></a>
+                        <img class="lazyload sec-img2" src="https://iili.io/32fZHiu.png"></a>
             
         </div>
      
@@ -141,7 +141,7 @@
                 
                                     <div class="testimonial-bio ">
                                                 <div class="imageWidget  ">
-                                                            <img class="lazyload testimonial-bio-img" src="/images/main/founder.jpg"></div>
+                                                            <img class="lazyload testimonial-bio-img" src="https://iili.io/32fZBDP.jpg"></div>
      
                 
                                     <div class="richTextWidget  ">
@@ -163,7 +163,7 @@
                 
                                     <div class="testimonial-bio ">
                                                 <div class="imageWidget  ">
-                                                            <img class="lazyload testimonial-bio-img" src="/images/main/co.jpg"></div>
+                                                            <img class="lazyload testimonial-bio-img" src="https://iili.io/32fZKHQ.jpg"></div>
      
                 
                                     <div class="richTextWidget  ">
@@ -185,7 +185,7 @@
                 
                                     <div class="testimonial-bio ">
                                                 <div class="imageWidget  ">
-                                                            <img class="lazyload testimonial-bio-img" src="/images/main/witness.jpg"></div>
+                                                            <img class="lazyload testimonial-bio-img" src="https://iili.io/32fZxig.jpg"></div>
      
                 
                                     <div class="richTextWidget  ">

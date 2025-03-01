@@ -65,8 +65,10 @@
                 
             
             <li style="background: #ffffff;padding: 15px 20px;margin: 10px 0;border-radius: 8px;display: flex;justify-content: space-between;align-items: center;box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);transition: all 0.3s ease-in-out;">
-                <span class="file-name" style="font-size: 16px;font-weight: 500;color: #555;">{{substr(basename($file), 0, 14) . "...pdf"}}</span>
-                <a href="<?= "https://" . env("AWS_BUCKET") . ".s3." . env("AWS_DEFAULT_REGION") . ".amazonaws.com/" . str_replace(' ', '+', $file); ?>" class="download-btn" download style="padding: 10px 18px;font-size: 14px;color: white;background-color: #007bff;text-decoration: none;border-radius: 6px;transition: background 0.3s;">Download</a>
+                <span class="file-name" style="font-size: 16px;font-weight: 500;color: #555;">
+                    Revision {{$loop->iteration}}
+                </span>
+                <a href="{{$file}}" class="download-btn" download style="padding: 10px 18px;font-size: 14px;color: white;background-color: #007bff;text-decoration: none;border-radius: 6px;transition: background 0.3s;">Download</a>
             </li>
 
             @endforeach

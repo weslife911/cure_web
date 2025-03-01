@@ -50,10 +50,10 @@
 
 	<!-- Favicons
 	================================================== -->
-	<link rel="shortcut icon" href="/images/logo/logo.png">
-	<link rel="apple-touch-icon" href="/images/logo/logo.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="/images/logo/logo.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="/images/logo/logo.png">
+	<link rel="shortcut icon" href="https://iili.io/32fZHiu.png">
+	<link rel="apple-touch-icon" href="https://iili.io/32fZHiu.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="https://iili.io/32fZHiu.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="https://iili.io/32fZHiu.png">
         <style id="footerBefore">
             .footerBefore:before {
                  background-color:#262932;opacity:1;content:""; position:absolute; top:0%; display:block; left:0%; right:0%; bottom:0%; width:100%; height:100%;
@@ -97,23 +97,6 @@
 <script src="{{asset('/js/bootstrap.min.js')}}"></script>
 <script src="{{asset('/js/wow.min.js')}}"></script>
 <script src="{{asset('/js/webfont.js')}}"></script>
-                            
-    <script>
-        window.lazySizesConfig = window.lazySizesConfig || {};
-        window.lazySizesConfig.lazyClass = 'lazy';
-        window.lazySizesConfig.srcAttr = 'data-original';
-
-        wow = new WOW(
-        {
-          animateClass: 'animated',
-          offset:       100
-        }
-      );
-      wow.init();
-    </script>
-
-
-<script custom-script-id="website_global" src="{{asset('/js/website_global.js')}}"></script>
 
 
 </body>

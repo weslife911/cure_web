@@ -28,7 +28,7 @@
         }
     </style>
     <section id="section-10942673" class="
-    wb-heroHeader dark                 " style="background-image: url(/images/bg/group_2.jpg);background-repeat: no-repeat;background-size: cover;background-position: center center;"><div class="wb-heroHeader-wrapper ">
+    wb-heroHeader dark                 " style="background-image: url(https://iili.io/32fLvj9.jpg);background-repeat: no-repeat;background-size: cover;background-position: center center;"><div class="wb-heroHeader-wrapper ">
                         <div class="richTextWidget wb-heroHeader-content ">
 <h2 style=" margin-bottom:10px;" class="main-heading">What we offer</h2> 
 </div>            
@@ -204,7 +204,7 @@
             
                                 <div class="col-lg-6 col-md-6 col-sm-12 ">
                                             <div class="imageWidget about-image-large Img3 ">
-                                                        <img class="lazyload faq-img" style="" src="/images/bg/group_7.jpg"></div>
+                                                        <img class="lazyload faq-img" style="" src="https://iili.io/32fLp6J.jpg"></div>
  
             
     

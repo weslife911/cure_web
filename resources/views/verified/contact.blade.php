@@ -33,7 +33,7 @@
 
 
 <section id="section-10942796" class="
-breadcrumb-section dark sec-padding-lg                 " style="background-image: url(/images/bg/group_4.jpg);background-repeat: no-repeat;background-size: cover;background-position: center center;"><div class="container boxWidget">
+breadcrumb-section dark sec-padding-lg                 " style="background-image: url(https://iili.io/32fLr4j.jpg);background-repeat: no-repeat;background-size: cover;background-position: center center;"><div class="container boxWidget">
 <div class="col-lg-6 ">
 <div class="richTextWidget title-heading ">
 <h1>Get in Touch</h1></div>            
