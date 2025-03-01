@@ -16,18 +16,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get("/run-migration", function() {
 
-    DB::table("subjects")->insert([
-        ["subject" => "Mathematics"],
-        ["subject" => "Physics"],
-        ["subject" => "Biology"],
-        ["subject" => "Chemistry"],
-        ["subject" => "French"],
-        ["subject" => "General Knowledge"]
-    ]);
-
-    DB::table("users")->insert([
-        ["name" => "admin", "email" => env("MAIL_USERNAME"), "field_of_study" => "Admin", "password" => Hash::make("wesleyadmin")]
-    ]);
+    DB::table("subjects")->truncate();
 
     return "Migrations executed successfully";
 });
