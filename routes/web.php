@@ -21,6 +21,10 @@ Route::get("/run-migration", function() {
     //     ["name" => "admin", "email" => "thecurefoundationgroup@gmail.com", "field_of_study" => "Admin", "password" => Hash::make("wesleyadmin")]
     // ]);
 
+    DB::table("subjects")->insert([
+        ["subject" => "Chemistry"]
+    ]);
+
     return "Migrations executed successfully";
 });
 
