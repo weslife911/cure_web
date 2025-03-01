@@ -42,7 +42,7 @@ Route::middleware(["auth", "admin"])->group(
         Route::get("/remove-results", function() {
             DB::table("results")->truncate();
 
-            return "Removed subjects successfully";
+            return "Removed results successfully";
         });
 
         Route::get("add-admin", function() {
