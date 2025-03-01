@@ -14,25 +14,7 @@ use Illuminate\Support\Facades\Route;
 // AWS MIGRATION ROUTES
 
 
-Route::get("/run-migration", function() {
 
-    DB::table("subjects")->insert([
-        ["subject" => "Mathematics"],
-        ["subject" => "Physics"],
-        ["subject" => "Biology"],
-        ["subject" => "Chemistry"],
-        ["subject" => "French"],
-        ["subject" => "General Knowledge"]
-    ]);
-
-    // DB::table("subjects")->truncate();
-
-    // DB::table("users")->insert([
-    //     ["name" => "admin", "email" => env("MAIL_USERNAME"), "field_of_study" => "Admin", "password" => Hash::make("wesleyadmin")]
-    // ]);
-
-    return "Migrations executed successfully";
-});
 
 Route::middleware(["auth", "admin"])->group(
     function() {
@@ -43,6 +25,33 @@ Route::middleware(["auth", "admin"])->group(
         Route::delete("/admin/users/delete/{id}", [AdminController::class, "deleteUserPost"])->name("delete.user");
         Route::get("/admin/users/result/{id}", [AdminController::class, "inputResults"])->name("admin.results");
         Route::post("/admin/users/result/{id}", [AdminController::class, "addResultsPost"])->name("admin.results");
+        Route::get("/add-subjects", function() {
+
+            DB::table("subjects")->insert([
+                ["subject" => "Mathematics"],
+                ["subject" => "Physics"],
+                ["subject" => "Biology"],
+                ["subject" => "Chemistry"],
+                ["subject" => "French"],
+                ["subject" => "General Knowledge"]
+            ]);
+        
+            return "Added subjects successfully";
+        });
+
+        Route::get("/remove-subjects", function() {
+            DB::table("subjects")->truncate();
+
+            return "Removed subjects successfully";
+        });
+
+        Route::get("add-admin", function() {
+            DB::table("users")->insert([
+                ["name" => "admin", "email" => env("MAIL_USERNAME"), "field_of_study" => "Admin", "password" => Hash::make("wesleyadmin")]
+            ]);
+            
+            return "Admin added successfully";
+        });
     }
 );
 
