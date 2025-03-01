@@ -44,8 +44,8 @@
                                         <div class="item-box ">
                                         <div class="richTextWidget para-second para-normal ">
          <h4 class="heading-sub">ABOUT US</h4> <h1 style="font-weight: 700;text-transform: capitalize;">Preparing Students for Success</h1><p>Our dedicated team is committed to helping students develop the critical thinking, problem-solving, and communication skills necessary for future success.</p></div>            
-                                    <div class="richTextWidget  ">
-         <ul style="list-style: none;"><li class="list-brands-item"><a class="list-brands-link col-lg-2 col-sm-4"><img class="list-brands-img" src="/images/svg/icon10.svg"></a></li><li class="list-brands-item"><a class="list-brands-link col-lg-2 col-sm-4"><img class="list-brands-img" src="/images/svg/icon7.svg"></a></li><li class="list-brands-item"><a class="list-brands-link col-lg-2 col-sm-4"><img class="list-brands-img" src="/images/svg/icon9.svg"></a></li></ul></div>            
+         <div class="richTextWidget  ">
+            <ul style="list-style: none;"><li class="list-brands-item"><a class="list-brands-link col-lg-2 col-sm-4"><img class="list-brands-img" src="https://iili.io/32BBx24.jpg"></a></li><li class="list-brands-item"><a class="list-brands-link col-lg-2 col-sm-4"><img class="list-brands-img" src="https://iili.io/32BBn4f.jpg"></a></li><li class="list-brands-item"><a class="list-brands-link col-lg-2 col-sm-4"><img class="list-brands-img" src="https://iili.io/32BBCEG.jpg"></a></li></ul></div>            
         
     </div>
                 

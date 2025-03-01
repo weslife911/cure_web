@@ -9,7 +9,7 @@
      
      
          <section id="section-10942673" class="
-                         wb-heroHeader dark                 " style="background-image: url(/images/bg/group_9.jpg);background-repeat: no-repeat;background-size: cover;background-position: center center;"><div class="wb-heroHeader-wrapper ">
+                         wb-heroHeader dark                 " style="background-image: url(https://iili.io/32fQ93v.jpg);background-repeat: no-repeat;background-size: cover;background-position: center center;"><div class="wb-heroHeader-wrapper ">
                                              <div class="richTextWidget wb-heroHeader-content ">
              <h2 style=" margin-bottom:10px;" class="main-heading">TESTIMONIALS</h2> <h6 style="text-transform: capitalize;">Get Inspiring experiences from students who passed through <strong>THE CURE</strong></h6>
          </div>            

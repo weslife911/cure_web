@@ -11,7 +11,7 @@
         }
     </style>
     <section id="section-10945347" class="
-                widget-section dynamic-form-widget sec-padding-xl  theme-dark-color-11                 " style="background:#1b1e25 url(/images/bg/group_7.jpg)  no-repeat center center;position: relative; overflow: hidden; background-size: cover;margin-top:0px"><div class="container boxWidget">
+                widget-section dynamic-form-widget sec-padding-xl  theme-dark-color-11                 " style="background:#1b1e25 url(https://iili.io/32fLp6J.jpg)  no-repeat center center;position: relative; overflow: hidden; background-size: cover;margin-top:0px"><div class="container boxWidget">
                                     <div class="row centered-row ">
                                     <div class="richTextWidget block-title ">
      <h4 style="color: #fff;">Login Form</h4><p style="color: #fff;">Login to access your student account.</p></div>            
