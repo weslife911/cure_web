@@ -16,6 +16,7 @@ return new class extends Migration
             $table->foreignId("user_id")->constrained("users")->onDelete("cascade");
             $table->decimal("score", 5, 2);
             $table->foreignId("subject_id")->constrained("subjects")->onDelete("cascade");
+            $table->timestamps();
         });
     }
 

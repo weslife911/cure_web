@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\User;
 use Illuminate\Http\Request;
 use App\Models\Result;
 use Barryvdh\DomPDF\Facade\Pdf;
@@ -33,4 +34,6 @@ class ResultController extends Controller
         $pdf = Pdf::loadView("results.results", $data);
         return $pdf->download("CA_" . str_replace(" ", "_", Auth::user()->name) . ".pdf");
     }
+
+    
 }

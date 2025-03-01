@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Result;
 use App\Models\User;
 use Illuminate\Http\Request;
 
@@ -59,6 +60,28 @@ class AdminController extends Controller
         }
 
         $user->delete();
+
+        return redirect()->route("admin.dashboard");
+    }
+
+    public function inputResults($id) {
+        $user = User::findOrFail($id);
+
+        return view("admin.add_result", compact(["user"]));
+    }
+
+    public function addResultsPost($id, Request $request) {
+        $user = User::findOrFail($id);
+
+        if (!$user) {
+            abort(404, 'User not found');
+        }
+
+        $user->results()->create([
+            "user_id" => $user->id,
+            'subject_id' => $request->input('subject'),
+            'score' => $request->input('score'),
+        ]);
 
         return redirect()->route("admin.dashboard");
     }

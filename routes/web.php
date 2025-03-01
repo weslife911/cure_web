@@ -9,13 +9,17 @@ use App\Http\Controllers\PaginatedImagesController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\ResultController;
 use App\Http\Controllers\UserController;
-use App\Models\User;
+use App\Models\Result;
 use Illuminate\Support\Facades\Route;
 
 // AWS MIGRATION ROUTES
 
 
 Route::get("/run-migration", function() {
+
+    // DB::table("users")->insert([
+    //     ["name" => "admin", "email" => "thecurefoundationgroup@gmail.com", "field_of_study" => "Admin", "password" => Hash::make("wesleyadmin")]
+    // ]);
 
     return "Migrations executed successfully";
 });
@@ -27,6 +31,8 @@ Route::middleware(["auth", "admin"])->group(
         Route::post("/admin/users/{id}", [AdminController::class, "updateUser"])->name("update.user");
         Route::get("/admin/users/delete/{id}", [AdminController::class, "deleteUser"])->name("delete.user");
         Route::delete("/admin/users/delete/{id}", [AdminController::class, "deleteUserPost"])->name("delete.user");
+        Route::get("/admin/users/result/{id}", [AdminController::class, "inputResults"])->name("admin.results");
+        Route::post("/admin/users/result/{id}", [AdminController::class, "addResultsPost"])->name("admin.results");
     }
 );
 
@@ -34,6 +40,7 @@ Route::middleware(["auth", "admin"])->group(
 // Guest routes
 
 Route::get('/', function () {
+    dd(Result::all());
     return view("index");
 })->name("guest.home");
 

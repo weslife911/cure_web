@@ -27,6 +27,9 @@
         <a href="{{route('delete.user', $user->id)}}">
             Delete
         </a>
+        <a href="{{route('admin.results', $user->id)}}">
+            Add Results
+        </a>
 
     </form>
 </body>
