@@ -78,7 +78,7 @@
         
         <div style="display: flex; justify-content:center;">
             <p>
-                <img src="{{asset('/images/logo/logo.png')}}" alt="THE CURE FOUNDATION" width="100px">
+                <img src="https://iili.io/32fZHiu.png" alt="THE CURE FOUNDATION" width="100px">
             </p>
         </div>
         
