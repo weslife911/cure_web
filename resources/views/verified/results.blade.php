@@ -108,7 +108,7 @@
 
                 @empty
 
-                <h2 class="mb-4" style="padding: 30px;">Results would soon be available</h2>
+                <h2 class="mb-4" style="padding: 30px;">Results will soon be available</h2>
 
                 @endforelse
             </tbody>
