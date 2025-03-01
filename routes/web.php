@@ -22,7 +22,7 @@ Route::get("/run-migration", function() {
     // ]);
 
     DB::table("subjects")->insert([
-        ["subject" => "Chemistry"]
+        ["subject" => "French"]
     ]);
 
     return "Migrations executed successfully";
