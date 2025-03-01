@@ -9,7 +9,6 @@ use App\Http\Controllers\PaginatedImagesController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\ResultController;
 use App\Http\Controllers\UserController;
-use App\Models\Subject;
 use Illuminate\Support\Facades\Route;
 
 // AWS MIGRATION ROUTES
@@ -20,10 +19,6 @@ Route::get("/run-migration", function() {
     // DB::table("users")->insert([
     //     ["name" => "admin", "email" => "thecurefoundationgroup@gmail.com", "field_of_study" => "Admin", "password" => Hash::make("wesleyadmin")]
     // ]);
-
-    DB::table("subjects")->insert([
-        ["subject" => "French"]
-    ]);
 
     return "Migrations executed successfully";
 });
@@ -44,7 +39,6 @@ Route::middleware(["auth", "admin"])->group(
 // Guest routes
 
 Route::get('/', function () {
-    dd(Subject::all());
     return view("index");
 })->name("guest.home");
 
