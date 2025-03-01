@@ -39,8 +39,8 @@ Route::middleware(["auth", "admin"])->group(
             return "Added subjects successfully";
         });
 
-        Route::get("/remove-subjects", function() {
-            DB::table("subjects")->truncate();
+        Route::get("/remove-results", function() {
+            DB::table("results")->truncate();
 
             return "Removed subjects successfully";
         });
