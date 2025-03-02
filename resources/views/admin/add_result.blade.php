@@ -29,7 +29,10 @@
                 <tr>
                     @foreach ($subjects as $subject)
                         <tr>
-                            {{$subject}}
+                            {{$subject->id}}
+                        </tr>
+                        <tr>
+                            {{$subject->subject}}
                         </tr>
                     @endforeach
                 </tr>
