@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Result;
+use App\Models\Subject;
 use App\Models\User;
 use Illuminate\Http\Request;
 
@@ -66,8 +67,9 @@ class AdminController extends Controller
 
     public function inputResults($id) {
         $user = User::findOrFail($id);
+        $subjects = Subject::all();
 
-        return view("admin.add_result", compact(["user"]));
+        return view("admin.add_result", compact(["user", "subjects"]));
     }
 
     public function addResultsPost($id, Request $request) {

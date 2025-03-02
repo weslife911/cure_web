@@ -14,5 +14,27 @@
         <input type="text" name="subject" placeholder="Subject ID">
         <input type="submit" value="Submit">
     </form>
+
+    <div>
+        <table>
+            <thead>
+                <th>
+                    #
+                </th>
+                <th>
+                    Subjects
+                </th>
+            </thead>
+            <tbody>
+                <tr>
+                    @foreach ($subjects as $subject)
+                        <tr>
+                            {{$subject}}
+                        </tr>
+                    @endforeach
+                </tr>
+            </tbody>
+        </table>
+    </div>
 </body>
 </html>
