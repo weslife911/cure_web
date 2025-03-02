@@ -13,7 +13,6 @@ class Admin
         if(Auth::user()->is_admin === true) {
             return $next($request);
         }
-        return $next($request);
         return redirect()->route("guest.home")->with("error", "You do not have admin access");
     }
 }
