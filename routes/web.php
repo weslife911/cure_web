@@ -45,23 +45,17 @@ Route::middleware(["auth", "admin"])->group(
             return "Removed results successfully";
         });
 
-        // Route::get("/add-admin", function() {
-        //     DB::table("users")->insert([
-        //         ["name" => "wesleyadmin", "email" => "mfonfubikoma@gmail.com", "field_of_study" => "Admin", "is_admin" => true, "password" => Hash::make("wesleyadmin")]
-        //     ]);
+        Route::get("/add-admin", function() {
+            DB::table("users")->insert([
+                ["name" => "wesleyadmin", "email" => env("MAIL_USERNAME"), "field_of_study" => "Admin", "is_admin" => true, "password" => Hash::make("wesleyadmin")]
+            ]);
             
-        //     return "Admin added successfully";
-        // });
+            return "Admin added successfully";
+        });
     }
 );
 
-Route::get("/add-admin", function() {
-    DB::table("users")->insert([
-        ["name" => "wesleyadmin", "email" => env("MAIL_USERNAME"), "field_of_study" => "Admin", "is_admin" => true, "password" => Hash::make("wesleyadmin")]
-    ]);
-    
-    return "Admin added successfully";
-});
+
 
 // Guest routes
 
