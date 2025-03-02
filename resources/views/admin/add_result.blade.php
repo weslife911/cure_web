@@ -16,28 +16,15 @@
     </form>
 
     <div>
-        <table>
-            <thead>
-                <th>
-                    #
-                </th>
-                <th>
-                    Subjects
-                </th>
-            </thead>
-            <tbody>
-                <tr>
-                    @foreach ($subjects as $subject)
-                        <tr>
-                            {{$subject->id}}
-                        </tr>
-                        <tr>
-                            {{$subject->subject}}
-                        </tr>
-                    @endforeach
-                </tr>
-            </tbody>
-        </table>
+        @forelse ($subjects as $subject)
+            <p>
+                {{$subject->id}} - {{$subject->subject}}
+            </p>
+        @empty
+            <p>
+                There are no subjects available
+            </p>
+        @endforelse
     </div>
 </body>
 </html>
