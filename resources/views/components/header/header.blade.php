@@ -60,6 +60,14 @@
                                                                             </a>
                                                                     </li>
 
+                                            @if (Auth::user()->is_admin === true)
+                                            <li>
+                                                <a href="{{route('admin.dashboard')}}" pageslug="login" linktype="Page" class="siteNavLink">
+                                                    DASHBOARD
+                                                                            </a>
+                                                                    </li>
+                                            @endif
+
                                                 <li class="dropdown">
                                                     <a href="{{route('contact')}}" pageslug="contact" linktype="Page" class="siteNavLink">
                                                         CONTACT
