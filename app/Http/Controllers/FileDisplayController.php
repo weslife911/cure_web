@@ -13,6 +13,17 @@ class FileDisplayController extends Controller
         $this->middleware("auth");
     }
 
+    public function gce() {
+        $files = [
+            "https://mega.nz/file/Mt4ghaxD#60giwH_4nT7D_fACQYnQX_JVCsD5ReS3Lu6ln5OBMks",
+            "https://mega.nz/file/ZtQyGKiL#pVC6pCUOHgVI3nMmEw2ekUI4XLGhunGV9RxPbl5U3b0",
+            "https://mega.nz/file/c1ZhVA4A#By3adVn5w0tq_Lrwo6173Mx9GoBSkk54rrD7bRpWvCA",
+            "https://mega.nz/file/Z4hDHYZT#L8vxXjrvOsIAjNZqfb288RDE-feOEABi6n8w8v3AsI4"
+        ];
+
+        return view("verified.gce", compact(["files"]));
+    }
+
     public function ca(Request $request) {
 
         $files = [];

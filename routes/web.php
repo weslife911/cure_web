@@ -137,7 +137,7 @@ Route::middleware(["auth", "verified"])->group(
 );
 
 
-
+Route::get("/student/gce", [FileDisplayController::class, "gce"])->name("gce");
 Route::get("/student/ca", [FileDisplayController::class, "ca"])->name("ca");
 Route::get("/student/revision", [FileDisplayController::class, "revision"])->name("revision");
 Route::get("/student/notes", [FileDisplayController::class, "notes"])->name("notes");

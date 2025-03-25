@@ -74,6 +74,12 @@
                                                                                 </a>
                                                                         </li>
 
+                                            <li>
+                                                <a href="{{route('gce')}}" pageslug="login" linktype="Page" class="siteNavLink">
+                                                    GCE
+                                                                            </a>
+                                                                    </li>
+
 
                                             <li>
                                                 <a href="{{route('ca')}}" pageslug="login" linktype="Page" class="siteNavLink">
