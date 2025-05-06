@@ -1,0 +1,77 @@
+version: '3.8'
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile.prod
+    volumes:
+      - ./:/app  # Maps Windows directory to container
+      - ./public:/public  # Public directory
+    environment:
+      # App Configuration
+      - APP_ENV=production
+      - APP_DEBUG=false
+      - APP_URL=https://yourdomain.com
+      
+      # Database Configuration (PostgreSQL)
+      - DB_CONNECTION=pgsql
+      - DB_HOST=dpg-d0cqvm3e5dus73alm9v0-a
+      - DB_PORT=5432
+      - DB_DATABASE=the_cure_db
+      - DB_USERNAME=the_cure_db_user
+      - DB_PASSWORD=bO2AxOeZVPU2w2dbqZdzbF1By0HAQwwh
+      
+      # Mail Configuration (Example for SMTP)
+      - MAIL_MAILER=smtp
+      - MAIL_HOST=smtp.gmail.com  # Replace with your SMTP host
+      - MAIL_PORT=587             # Replace with your SMTP port
+      - MAIL_USERNAME=thecurefoundation@gmail.com
+      - MAIL_PASSWORD=hytyevkxgsukpxvg 
+      - MAIL_ENCRYPTION=tls
+      - MAIL_FROM_ADDRESS=thecurefoundation@gmail.com
+      - MAIL_FROM_NAME="${APP_NAME}"
+      
+      # Redis (if needed)
+      - REDIS_HOST=redis
+      - REDIS_PORT=6379
+    depends_on:
+      - db
+      - redis
+
+  db:
+    image: postgres:13
+    environment:
+      - POSTGRES_DB=the_cure_db
+      - POSTGRES_USER=the_cure_db_user
+      - POSTGRES_PASSWORD=bO2AxOeZVPU2w2dbqZdzbF1By0HAQwwh
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U laraveluser -d laravel"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  redis:
+    image: redis:alpine
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+
+  webserver:
+    image: nginx:alpine
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./docker/nginx/conf.d:/etc/nginx/conf.d
+      - ./public:/public
+      - ./docker/nginx/ssl:/etc/nginx/ssl
+    depends_on:
+      - app
+
+volumes:
+  postgres_data:
+  redis_data:

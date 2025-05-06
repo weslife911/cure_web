@@ -1,0 +1,37 @@
+# Use official PHP-FPM Alpine image
+FROM php:8.2-fpm-alpine
+
+# Install system dependencies
+RUN apk add --no-cache \
+    libzip-dev \
+    libpng-dev \
+    oniguruma-dev \
+    libxml2-dev \
+    postgresql-dev \  # Added for PostgreSQL support
+    && docker-php-ext-install pdo pdo_mysql pdo_pgsql mbstring zip exif pcntl bcmath gd
+
+# Install Composer
+COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
+
+# Create application directory (adjust as needed)
+ARG APP_DIR=/app
+RUN mkdir -p ${APP_DIR}
+WORKDIR ${APP_DIR}
+
+# Copy application files
+COPY . .
+
+# Install dependencies and optimize
+RUN composer install --no-dev --optimize-autoloader \
+    && php artisan config:cache \
+    && php artisan route:cache \
+    && php artisan view:cache
+
+# Set proper permissions (adjust for Windows compatibility)
+RUN chown -R www-data:www-data ${APP_DIR}/storage \
+    && chmod -R 775 ${APP_DIR}/storage
+
+# Set the working directory for the CMD
+WORKDIR ${APP_DIR}
+
+CMD ["php-fpm"]
